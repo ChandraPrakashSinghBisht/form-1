@@ -1,0 +1,163 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Cinzel', serif;
+}
+
+.bgimg{
+ width: 100%;
+ height: 100vh;
+ background-image: linear-gradient(27deg, #1c5de7 50%, #0b2adb 50%);
+}
+
+.centerdiv{
+ width: 350px;
+ height: 420px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ background-color: red;
+ transform: translate(-50%, -50%);
+ background-image: linear-gradient(27deg, #013A6B 50%, #004E95 50%);
+ box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+#profilepic{
+ width: 120px;
+ height: 140px;
+ border-radius: 50%;
+ position: relative;
+ top: -60px;
+ left: calc( (350px - 120px) / 2 )
+}
+
+h2{
+ text-align: center;
+ color: white;
+ text-transform: uppercase;
+ font-size: 2em;
+ word-spacing: 10px;
+ margin-top: -50px;
+ margin-bottom: 50px;
+ text-shadow: -2px 2px 1px #0A84C6;
+}
+
+.inputbox{
+ width: calc(100% - 40px);
+ height: 30px;
+ display: block;
+ margin: auto;
+ padding: 0 10px;
+ font-size: medium;
+ box-sizing: border-box;
+}
+
+::placeholder{
+ letter-spacing: 2px;
+ color: black;
+ font-size: medium;
+}
+
+button{
+ width: calc(100% - 40px);
+ height: 30px;
+ display: block;
+ margin: auto;
+ text-transform: uppercase;
+ color: white;
+ background-color: #0A84C6;
+ border: none;
+ font-size: 18px;
+}
+
+
+/* Mobile Users */
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 500px) and (min-device-height : 400px){
+    .bgimg      {
+        width: auto;
+        height: 100vh ;
+    }
+    .centerdiv  {
+        width: 90%;
+        height: 45%;
+        
+    }
+    #profilepic{
+        width: 35vw;
+        height: auto;
+        margin-left: 120px;
+    }
+   h2 {
+        width: 75%;
+        height: 50px;
+        margin-left: 78px;
+        font-size: 3rem;
+    }
+    .inputbox {
+        width: 90%;
+        height: 75px;
+        font-size: 1.7em;
+    }
+   ::placeholder {
+         width: 90%;
+        height: 75px;
+        font-size: 0.8em;
+    }
+    .inputbox {
+        width: 90%;
+        height: 75px;
+        font-size: 3em;
+    }
+    button {
+        width: 90%;
+        height: 75px;
+        font-size: 2.8em;
+    }
+}
+
+/* Tablet Users */
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 768px) {
+    .bgimg      {
+        width: auto;
+        height: 100vh ;
+    }
+    .centerdiv  {
+        width: 90%;
+        height: 50vh;
+        
+    }
+    #profilepic{
+        width: 30vw;
+        height: auto;
+        margin-left: 140px;
+    }
+   h2 {
+        width: 70%;
+        height: 37px;
+        margin-left: 83px;
+        font-size: 2.8rem;
+    }
+    .inputbox {
+        width: 85%;
+        height: 70px;
+        font-size: 1.5em;
+    }
+   ::placeholder {
+         width: 85%;
+        height: 70px;
+        font-size: 0.7em;
+    }
+    .inputbox {
+        width: 85%;
+        height: 70px;
+        font-size: 2.8em;
+    }
+    button {
+        width: 85%;
+        height: 70px;
+        font-size: 2.6em;
+    }
+}
